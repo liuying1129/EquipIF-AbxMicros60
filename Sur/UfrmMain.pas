@@ -147,7 +147,6 @@ begin
   result := result + 'data source=' + datasource + ';';
   result := result + 'Initial Catalog=' + initialcatalog + ';';
   result := result + 'provider=' + 'SQLOLEDB.1' + ';';
-  result := result + 'Persist Security Info=True;';//连接SQL SERVER 2008时必需
   if ifIntegrated then
     result := result + 'Integrated Security=SSPI;';
 end;
